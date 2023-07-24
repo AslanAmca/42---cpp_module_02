@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:37:21 by aaslan            #+#    #+#             */
-/*   Updated: 2023/07/24 21:52:41 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/25 00:44:05 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,12 +116,12 @@ bool Fixed::operator!=(const Fixed &other) const
 
 Fixed Fixed::operator+(const Fixed &other) const
 {
-	return Fixed(toFloat() * other.toFloat());
+	return Fixed(toFloat() + other.toFloat());
 }
 
 Fixed Fixed::operator-(const Fixed &other) const
 {
-	return Fixed(toFloat() * other.toFloat());
+	return Fixed(toFloat() - other.toFloat());
 }
 
 Fixed Fixed::operator*(const Fixed &other) const
@@ -131,7 +131,7 @@ Fixed Fixed::operator*(const Fixed &other) const
 
 Fixed Fixed::operator/(const Fixed &other) const
 {
-	return Fixed(toFloat() * other.toFloat());
+	return Fixed(toFloat() / other.toFloat());
 }
 
 /*--------------- Pre-increment & Pre-decrement ---------------*/
