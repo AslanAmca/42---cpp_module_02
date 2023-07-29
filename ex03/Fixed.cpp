@@ -6,7 +6,7 @@
 /*   By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 12:37:21 by aaslan            #+#    #+#             */
-/*   Updated: 2023/07/25 00:43:25 by aaslan           ###   ########.fr       */
+/*   Updated: 2023/07/29 19:42:26 by aaslan           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int Fixed::toInt(void) const
 	return fixedPointNumberValue >> fractionalBits;
 }
 
-/*--------------- Karşılaştırma Operatörleri ---------------*/
+/*--------------- Comparison Operators ---------------*/
 
 bool Fixed::operator>(const Fixed &other) const
 {
@@ -95,7 +95,7 @@ bool Fixed::operator!=(const Fixed &other) const
 	return toFloat() != other.toFloat();
 }
 
-/*--------------- Aritmetik Operatörler ---------------*/
+/*--------------- Arithmetic Operators ---------------*/
 
 Fixed Fixed::operator+(const Fixed &other) const
 {

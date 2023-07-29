@@ -6,14 +6,14 @@
 #    By: aaslan <aaslan@student.42kocaeli.com.tr    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/24 11:23:19 by aaslan            #+#    #+#              #
-#    Updated: 2023/07/25 00:44:30 by aaslan           ###   ########.fr        #
+#    Updated: 2023/07/29 19:37:20 by aaslan           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME		:= bsp
 CXX			:= c++
 CXXFLAGS	:= -Wall -Wextra -Werror -std=c++98
-SRC			:= $(wildcard *.cpp)
+SRC			:= Fixed.cpp Point.cpp Bsp.cpp main.cpp
 
 all: $(NAME)
 
